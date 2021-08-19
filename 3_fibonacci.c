@@ -7,7 +7,20 @@
  * $ ./3_fibonacci 10
  * 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
  */
-
-int main() {
-  
-}
+ #include <stdio.h>
+ int main (void)
+ {
+     int length, a= 1, b= 0, i= 0;
+     while (i < length) {
+       b= b + a;
+       printf("%d ", b);
+       i++;
+       if (i < length)
+       {
+           a= a + b;
+           printf("%d ", a);
+           i++;
+       }
+   }
+   return 0;
+ }

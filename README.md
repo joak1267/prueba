@@ -1,7 +1,7 @@
 # Evaluación
 Fecha: 19/08/2021
-Año y división:
-Nombre y apellido:
+Año y división:4°4
+Nombre y apellido:Joaquin Gil Apesteguia
 
 ## Ejercicio
 Cambiar el código en `1_dias.c`, `2_triangulo.c`, `3_fibonacci.c` y `4_cuadratica.c` hasta que los tests pasen.

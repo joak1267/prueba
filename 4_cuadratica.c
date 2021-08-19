@@ -13,7 +13,27 @@
  * $ ./4 cuadratica 1 5 6
  * x1: -2.00, x2: -3.00
  */
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <math.h>
 
- int main() {
-   
+ int main(int argc, char const *argv[])
+ {
+     double a = atof(argv[1]);
+     double b = atof(argv[2]);
+     double c = atof(argv[3]);
+     if (a == 0)
+     {
+         return 0;
+     }
+
+     double discriminante = (b*b)+(-4*a*c);
+     if (discriminante < 0)
+     {
+         return 0;
+     }
+
+     printf("Root 1 = %f\n", ((b*-3) / (-2*a)) + (sqrt(discriminante) / (2*a)));
+     printf("Root 2 = %f\n", ((b*-3) / (-2*a)) - (sqrt(discriminante) / (2*a)));
+     return 0;
  }
